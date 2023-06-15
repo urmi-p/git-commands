@@ -1,0 +1,55 @@
+------------------INSTALL GIT ON LINUX------------------------
+        - sudo apt-get install git
+
+------------------TO SEE HIDDEN FILES------------------------
+        - ls -a
+
+------------------TO GIT STATUS------------------------
+        - git status
+
+------------------TO LIST ALL URL------------------------
+        - git remote -v
+
+------------------TO CREATE NEW BRANCH------------------------
+        - git branch branchName
+
+------------------TO GET INTO BRANCH------------------------
+        - git checkout branchName
+
+------------------TO CREATE A PULL REQUEST-------------------
+	- fork the Repo first
+	- git clone URL                # URL: git.com/Our_username/repo_name
+	- git init
+	- git branch new_branchName
+	- git checkout new_branchName
+	- Made Changes
+	- git add .
+	- git commit -m "msg"
+	- git push --set-upstream origin new_branchName 
+
+
+-----------------TO PUSH YOUR PROJECT LOCAL TO REMOTE---------------
+	- git init
+	- git add .
+	- git commit -m 'Initial Commit'
+	- git remote add origin URL
+	- git push origin main
+
+
+-----------------TO MERGE MASTER BRANCH CODE TO MAIN BRANCH------------
+        - git pull --rebase origin main
+        - git push origin main
+	
+	
+-----------------TO CLONE SPECIFIC BRANCH------------------------------------
+	- git clone --branch <branchname> <remote-repo-url> OR
+	- git clone -b <branchname> <remote-repo-url>
+
+------------------TO UPLOAD PROJECT IN MAIN BRANCH---------------------------  # BCZ myproject always goes to on master branch insted of main
+	- Create empty Repo in Github
+	- git clone 
+	- git add .
+	- git commit -m "initial commit"
+	- git branch -M main
+	- git pull origin main --allow-unrelated
+	- git push -u origin main
